@@ -62,6 +62,16 @@ button:hover {
     background-color: rgb(12, 12, 12);
 }
 
+/* Main Header Image */
+.main-header {
+  padding-top: 800px;
+  height: 850px;  
+  background: linear-gradient(#ffa949, transparent 90%),
+              linear-gradient(0deg, #fff, transparent),
+              #ffa949 url('../imgs/coverlogoLT.jpg') no-repeat center;
+  background-size: cover;
+  color:blue;
+}
 
 /* theme text colors, font weight, other styles */
 
@@ -148,17 +158,6 @@ button:hover {
     width: 80%;
 }
 
-.techSkills li {
-    padding-top: .5em;
-}
-
-.skills li {
-    text-align: left;
-    padding-top: .5em;
-    list-style: disc;
-    list-style-position: inside;
-}
-
 /*
 =======================
 Form Styles
@@ -211,11 +210,11 @@ Sub display
     margin-left: 5px;
 }
 
-.github {
+.icn2 {
     position: absolute;
     right: 5px;
 }
-.linkedIn {
+.icn1 {
     position: absolute;
     right: 90px;
 }
