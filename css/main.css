@@ -12,6 +12,8 @@ body {
   font-family: "Roboto", sans-serif;
   display: flex;
   flex-direction: column;
+  color:#878787;
+  margin: 0;
 }
 
 a {text-decoration: none;
@@ -55,6 +57,12 @@ button:hover {
     color: #376656;
 }
 
+.main-header h1 {
+  font-size: 5.625rem; /* 90px/16px */
+  text-transform: uppercase;
+  text-shadow: 0 2px 2px rgba(0,0,0,.8);
+}
+
 /* Wrapper */
 
 .wrapper {
@@ -62,15 +70,27 @@ button:hover {
     background-color: rgb(12, 12, 12);
 }
 
-/* Main Header Image */
+/* Main Header Image Start */
 .main-header {
-  padding-top: 800px;
-  height: 850px;  
-  background: linear-gradient(#ffa949, transparent 90%),
-              linear-gradient(0deg, #fff, transparent),
-              #ffa949 url('../imgs/coverlogoLT.jpg') no-repeat center;
+  padding: 250px 10px;
+  height: 800px;  
+  background: linear-gradient(#336666, transparent 80%),
+              linear-gradient(0deg, rgb(30, 30, 30), transparent),
+              #336666 url('../imgs/lighthouseCover.jpg') no-repeat center;
   background-size: cover;
-  color:blue;
+  color:whitesmoke;
+}
+
+.hd-title {
+  font-size: 1.625rem; /* 26px/16px */
+  letter-spacing: .065em;
+  border-bottom: 3px solid;
+  padding-bottom: 2px;
+}
+
+/* text align center */
+.main-header {
+  text-align: center;
 }
 
 /* theme text colors, font weight, other styles */
@@ -221,9 +241,9 @@ Sub display
 
 /*media query section*/
 @media (min-width:769px) {
- 
+
 .main-content {
-  padding-top: 7.5em;      
+  padding-top: 1em;      
   }    
 
 .nav-header,
@@ -252,7 +272,7 @@ Sub display
 .navigation li {
   margin-right: .5em;  
   }   
-    
+  
 .col-1 {
   width: 35%;    
   margin-right: 1em;
@@ -276,3 +296,10 @@ aside {
 }            
 	}
 }
+
+@media (max-width:504px) {
+  .main-header h1 {
+    font-size: 3rem;
+  }
+}
+  
