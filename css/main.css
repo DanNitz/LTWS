@@ -75,7 +75,7 @@ button:hover {
   padding: 250px 10px;
   height: 800px;  
   background: linear-gradient(#336666, transparent 80%),
-              linear-gradient(0deg, rgb(30, 30, 30), transparent),
+              linear-gradient(0deg, rgb(12, 12, 12), transparent),
               #336666 url('../imgs/lighthouseCover.jpg') no-repeat center;
   background-size: cover;
   color:whitesmoke;
