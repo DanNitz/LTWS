@@ -60,7 +60,9 @@ button:hover {
 }
 
 .album {
+  border: solid 1px whitesmoke;
   border-radius: 50%;
+  margin: 1em;
 }
 
 /* Wrapper */
@@ -104,6 +106,8 @@ button:hover {
 .white {color: white;}
 
 .green {color: #096;}
+
+.em3 {font-size: 3em;}
 
 .gray-fill {background: rgb(21, 24, 23);}
 .blk-fill {background: rgb(0, 0, 0);}
@@ -275,14 +279,22 @@ Sub display
 @media (max-width:769px){
 
   .col-1,.col-2,.col-3{
+    min-width: 325px;
     margin: auto;
     font-size: smaller;
   }
+  .album {
+    max-width: 275px;
+  }
 }
+
 
 @media (max-width:504px) {
   .main-header h1 {
     font-size: 3rem;
+  }
+  .album {
+    max-width: 150px;
   }
 }
 
