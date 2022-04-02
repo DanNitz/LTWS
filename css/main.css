@@ -97,7 +97,7 @@ button:hover {
   padding-bottom: 2px;
 }
 
-/* theme text colors, font weight, other styles */
+/* THEME text colors, font weight, other styles */
 
 .thin {font-weight: 100;}
 
@@ -111,7 +111,7 @@ button:hover {
 
 .gray-fill {background: rgb(21, 24, 23);}
 .blk-fill {background: rgb(0, 0, 0);}
-.teal-fill {background: #376656;}
+.teal-fill {background: #336666;}
 
 .bx-sdw {box-shadow: .2em .5em .8em #669;}
 
@@ -124,6 +124,43 @@ button:hover {
     border: solid .75em rgb(0, 0, 0);
 }
 /* ----------------------------------------- */
+
+/* Overlay transition on prof images */
+
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color:#336666;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.profilePic {
+  position: relative;
+}
+
+.profilePic:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+.text {
+  color: white;
+  font-size: 2em;
+  position:absolute;
+  top: 50%;
+  left:50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  text-align: center;
+}
+/* ----------------------------------------- */
+
 
 /* Navigation */
 
